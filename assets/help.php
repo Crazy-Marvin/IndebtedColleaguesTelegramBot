@@ -1,0 +1,5 @@
+<?php
+if(strpos($text, "/help")===0 and in_array($userId, $adminId)== True) {
+    sendMessage($chatId, "ℹ️ <u>Commands List</u>:\n/help <b><b>-</b></b> Show complete list of commands.\n\n/newColleague + Name & Surname <b><b>-</b></b> Add an Colleague to the Colleague List.\n/newFood + Name + Price <b>-</b> Add a food to the foods list.\n/newInvoice + Name & Surname + Food <b>-</b> Create new Invoices to desginated Colleague.\n\n/delColleague + id <b>-</b> Delete an Colleague form Colleague List.\n/delFood + id <b>-</b> Delete a Food from Foods List.\n/delInvoice + id <b>-</b> Delete an Invoices form Invoices List.\n\n/listColleagues <b>-</b> Show complete list of Colleague\n/listFoods <b>-</b> Show complte list of Foods.\n/payday <b>-</b> Show complete list of Invoices.\n/statistic <b>-</b> Show complete list of Invoices for Colleague.");
+}
+?>
